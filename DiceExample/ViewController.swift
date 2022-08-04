@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         Dice.textColor = .darkGray
-        Dice.text = "주사위"
+        Dice.text = "주사위를 돌려보세요"
         Dice.textAlignment = .center
         
         StartButton.backgroundColor = .yellow
@@ -38,6 +38,9 @@ class ViewController: UIViewController {
         DiceImage.image = DiceImages[random]
         
         Dice.text = (random + 1) % 2 == 0 ? "짝수입니다!" : "홀수입니다!"
+        
+        let colorRandom = Int.random(in: 0...colors.count-1)
+        Dice.textColor = colors[colorRandom]
     }
     
 }
