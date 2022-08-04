@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         Dice.textColor = .darkGray
-        Dice.text = "주사위를 돌려주세요"
+        Dice.text = "주사위 돌리기"
         Dice.textAlignment = .center
         
         StartButton.backgroundColor = .yellow
